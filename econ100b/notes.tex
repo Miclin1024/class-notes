@@ -1,0 +1,252 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage[export]{adjustbox}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{subfig}
+\graphicspath{ {./images/} }
+
+\renewcommand{\sb}{\vspace*{4px} \\}
+
+\title{Economic Analysis Macro - Class Notes}
+\author{Michael Lin}
+
+\begin{document}
+\maketitle
+
+\section{Measurement}
+
+We focus on the major items of macroeconomic interest: \textbf{Economic Activity, Inflation, Unemployment, Interest Rates}
+
+\subsection{National Income Accounting}
+\subsubsection{The Three Approaches to National Income Accounting}
+\underline{\textbf{Product Approach}}: the dollar amount of output \textbf{produced}. \sb
+The current \textbf{market value} of all \textbf{final goods and services newly produced} in the domestic economy, 
+during a specified period of time.
+\begin{enumerate}
+    \item \textbf{Market Value} \begin{itemize}
+        \item Not everything has a market - \textbf{imputed values} must be used. Determined based on \textbf{production cost}. 
+        \underline{Example: Fire Department.}
+        \item Most non-market goods and services are not included. \underline{Example: Household services.}
+        \item Some market goods and services are not included. \underline{Example: Used goods.}
+    \end{itemize}
+    \item \textbf{Final Goods and Services} \sb
+    Goods and services that are \textbf{not completely used up} in the production process.
+\end{enumerate}
+\underline{\textbf{Expenditure Approach}}: the dollar amount \textbf{spent} by purchasers. \sb
+The \textbf{total spending} on \textbf{all final goods and services} produced in the domestic economy during a specified period of time.
+\begin{equation}
+    \tag{\textbf{The National Income Identity}}
+    {\boxed{Y = C + I + G + NX}}
+    \end{equation}
+    \begin{enumerate}
+        \item \textbf{Consumption}\\
+        Spending by domestic households on final goods and services.
+        \item \textbf{Investment}\\
+        Spending for new capital goods\footnote{\textbf{Capital goods} are used to produce other goods and services.
+        } (fixed investment) plus inventory investment.
+        \item \textbf{Gov. Purchases of Goods and Services} \\
+        \textbf{Government Purchases} of goods and services. \sb
+        \textbf{Government Transfer Payments} are \underline{\textbf{not}} included in $G$. (Not payments for goods and services) 
+        \underline{Example: Medicare, Medicaid, Veterans’ benefits and etc.}
+        \item \textbf{Net Exports}: Exports - Imports
+    \end{enumerate}
+\pagebreak
+\textbf{\underline{Income Approach}}: the dollar \textbf{incomes earned} by production. \sb
+The \textbf{total income} earned by individuals and businesses in the economy. \sb
+\subsubsection{The Five Income Measures}
+\begin{itemize}
+    \item \textbf{National Income} = Compensation of Employees + Other Income + Corporate Profits
+    \item \textbf{Gross National Product (GNP)} = National Income + Depreciation
+    \item \textbf{Gross Domestic Product (GDP)} = GNP + Net Factor Payments
+    \item \textbf{Private Disposable Income (PDI)} = GDP + Net Factor Income + Transfer Payments from the Government 
+    + Interest Payments on Government Debt - Taxes
+    \item \textbf{Net Government Income (NGI)} = Taxes - Government Transfer Payments - Interest Payments on Government Debt
+\end{itemize}
+
+\subsection{Inflation}
+\subsubsection{Price Index}
+Measures the average level of prices for some specified set of goods and services 
+\textbf{relative to the prices in a specified base year.}
+\subsubsection{Three Major Price Indices} \begin{itemize}
+    \item \textbf{The Gross Domestic Product (GDP) Deflator:}
+    \[ P = 100 * \frac{\text{nominal GDP}}{\text{real GDP}} \]
+    \item \textbf{The Personal Consumption Expenditure (PCE) Deflator:}
+    \[ P = 100 * \frac{\text{nominal PCE}}{\text{real PCE}} \]
+    \item \textbf{The Consumer Price Index (CPI):} \sb
+    Measures the average prices of a specified basket of goods and services bought by consumers.
+\end{itemize}
+\subsubsection{Measuring Inflation}
+Given the price index at time $t$, denoted as $P_t$, the inflation rate $\pi_t$ is expressed as the following
+\[ \pi_t \approx \frac{P_t - P_{t-1}}{P_{t-1}} \]
+Where with a little bit algebra, we derive the \textbf{Fisher Equation}
+\[ i \approx r + \pi \]
+$i$ stands for the nominal interest rate, and $r$ is the real interest rate.
+\subsubsection{Unemployment}
+
+\section{Aggregate Production and Productivity}
+When labor and capital are separately increased with the other held constant, 
+the product increases by \textbf{diminishing increments}.
+\subsection{The Cobb-Douglas Production Function}
+Their assumptions for $Y(K, L)$: \begin{itemize}
+    \item Output $Y$ is a function of capital $K$ and labor $L$
+    \item Constant returns to scale: \sb
+    If $K - m * K$ and $L - m * L$ then $Y - m * Y$
+\end{itemize}
+Their proposed solution:\begin{equation}
+    \tag{\textbf{The Cobb-Douglas Production Function}}
+    \boxed{Y = AK^\alpha L^{1 - \alpha}}
+\end{equation}
+Shows how much output can be produced from givenamounts of 
+capital and labor with a given level of total-factor productivity $A$ 
+(also referred to as "technology"). \sb
+Taking logs of both sides and subtract $\ln(L)$
+\[\ln(\frac{Y}{L}) = \ln{A} + \alpha \ln(\frac{K}{L})\]
+Notice that we now have a linear equation that we can analyze
+\begin{figure}[H]%
+    \centering
+    \subfloat[\centering Linear Approx]{{\includegraphics[width=6cm]{agg_production_linear.png} }}%
+    \qquad
+    \subfloat[\centering Diminishing Marginal Return to K]{{\includegraphics[width=7cm]{Screen Shot 2020-09-18 at 4.12.59 PM.png} }}%
+    \caption{}%
+    \label{fig:1}%
+\end{figure}
+
+The production function can be drawn as either \begin{itemize}
+    \item Output as a function of capital (As shown in Figure 1(b))
+    \item Output as a function of labor
+\end{itemize}
+\begin{equation}
+    \tag{Marginal Product of Capital}
+    \begin{split}
+        \text{MPK} & \equiv \frac{\partial Y}{\partial K} \\
+        & = \alpha A (\frac{L}{K})^{1 - \alpha}
+    \end{split}
+\end{equation}
+
+\subsection{Understanding Shocks}
+Consider the Cobb-Douglas Production Function
+\[ Y = AK^\alpha L^{1 - \alpha} \]
+When $AL^{1 - \alpha}$ goes down, output goes down across all input $K$
+\begin{figure}[H]%
+    \centering
+    \subfloat[\centering Reduced Y Across K]{{\includegraphics[width=6cm]{Screen Shot 2020-09-18 at 4.48.01 PM.png} }}%
+    \qquad
+    \subfloat[\centering Reduced MPC]{{\includegraphics[width=6cm]{Screen Shot 2020-09-18 at 4.48.27 PM.png} }}%
+    \caption{Shock in $AL^{1 - \alpha}$}%
+    \label{fig:Shock}%
+\end{figure} \ \\
+Moveover, we can see that the slope of the post-shock production curve is smaller 
+than the pre-shock curve, which indicates the decrease of \textit{MPK}. As shown in 
+Figure 2(b), this also indicates the decrease of \textbf{real rental cost of capital}. \sb
+Similarily, when $AK^{\alpha}$ goes down, we will have a lower output across all input of capital.
+
+\subsection{Full-Employment Output}
+Full-employment, or potential, outputis the level of outputwhen the labor market is in the \textbf{long-run equilibrium}.
+\[ Y^P = AK^\alpha L_S^{1-\alpha} \]
+
+\section{The Solow-Swan Model: Long-Run Growth}
+Over the decades, we discovered that the growth of GDP is roughly \textbf{linear} in the \textbf{logrithmic domain}. 
+\[ \ln(Y(t)) = c + g_Y t \]
+Following this idea, we can get a model for describing the output at time $t$
+\[ Y(t) = Y(0)e^{g_Y t} \]
+\includegraphics[width=0.5\textwidth, center]{Screen Shot 2020-09-25 at 5.36.52 PM.png}
+We can see that our log-linear fit is pretty reasonable. The fluctuations about the trend are referred to as \textbf{bussiness cycles}.
+
+\subsection{Where Does Growth Come From?}
+Let's begin with the Cobb-Douglas Production Function
+\[ Y = AK^\alpha L^{1 - \alpha} \]
+Taking the log of both sides, then take the derivative
+\begin{equation}
+    \tag{Growth Accounting Formula}
+    \boxed{\frac{1}{Y}\frac{dY}{dt} = \frac{1}{A}\frac{dA}{dt} + \alpha \frac{1}{K}\frac{dK}{dt} + (1-\alpha)\frac{1}{L}\frac{dL}{dt}}
+\end{equation}
+Approximate the result with $\Delta t = 1$, we have
+\[ \frac{\Delta Y}{Y} = \frac{\Delta A}{A} + \alpha \frac{\Delta K}{K} + (1 - \alpha)\frac{\Delta L}{L} \]
+Sometimes it's also written as $g_Y = g_A + \alpha g_K + (1 - \alpha)g_L$ \sb
+For example, in the United States where $\alpha \approx 0.3$, we have
+\[g_Y = g_A + 0.3 g_K + 0.7 g_L\]
+This tells us how the growth of one or more of the variables in the production function attribute to the overall increase in output.\sb
+Research has shown that \textbf{productivity growth} is a more important source of variation in growth rates across countries than is growth 
+in capital or labor(a.k.a. factor accumulation).
+
+\subsection{The Solow-Swan Model}
+The Solow-Swan Model was developed in 1950s to determine \textbf{capital accumulation}, which affects \textbf{economic growth}. \sb
+To derive this, we assume that a \textbf{constant fraction $s$ of output} $Y$ is saved, and the capital \textbf{depreciates at a constant rate} $\delta$.
+\begin{equation}
+    \tag{Capital Accumulation Equation}
+    \frac{dK}{dt} = sAK^{\alpha}L^{1-\alpha} - \delta K
+\end{equation}
+The goal is to solve this differential equation so we get $K$ as a function of $t$ \sb
+We make the following assumptions: \begin{itemize}
+    \item Replace total factor of productivity $A$ with \textbf{labor efficiency} $E$, and assume that $E(t)$ has a \textbf{log-linear growth rate}
+    \begin{align*}
+        E(t) &= A(t)^{1/(1-\alpha)} \\
+        E(t) &= E(0)e^{g_E t}
+    \end{align*}
+    \item Assume that $L$ also grows in log-linear rate.
+    \[ L(t) = L(0)e^{g_L t} \]
+    \item Instead of examine the aggregate capital $K$, we look at the the \textbf{capital per worker per unit of worker efficiency}, denoted by $\kappa$. This 
+    is also referred to as \textbf{normalized capital}.
+    \[ \kappa(t) = \frac{K(t)}{E(t)L(t)} \]
+\end{itemize}
+Plug in our expression for $\kappa(t)$, $L(t)$, and $E(t)$, we have the capital accumulation equation for $\kappa$
+\[ \frac{d\kappa}{dt} = s\kappa^\alpha - (g_E + g_L + \delta)\kappa \]
+The solution $\kappa(t)$ is important because it is directly related to \textbf{per-capita income} by
+\[ \frac{Y(t)}{L(t)} = \kappa^\alpha(t)E(t) \]
+
+Generally we have two solutions of interest
+\begin{itemize}
+    \item The steady-state solution $\kappa^*$
+    \[ \frac{d\kappa}{dt} = 0 \]
+    \item The general solution $\kappa(t)$
+\end{itemize}
+
+
+\subsection{The Solutions}
+
+\subsubsection*{Stead-state Solution}
+Follows from the capital accumulation equation
+\[ \frac{d\kappa}{dt} = s\kappa^\alpha - (g_E + g_L + \delta)\kappa = 0 \]
+so \begin{align*}
+    s\kappa^\alpha &= (g_E + g_L + \delta)\kappa \\
+    \kappa^{1-\alpha} &= \frac{s}{g_E + g_L + \delta}
+\end{align*}
+and
+\begin{equation*}
+    \boxed{\kappa^* = (\frac{s}{g_E + g_L + \delta})^\frac{1}{1 - \alpha}}
+\end{equation*}
+In the steady state, per-capita income is given by
+\[ \frac{Y(t)}{L(t)}  = (\frac{s}{g_E + g_L + \delta})^\frac{1}{1 - \alpha}E(t) \]
+and from which follows that
+\[ g_{Y/L} = g_E \]
+In the steady state $\kappa(t) = \kappa^*$ and is not changing, so
+\[ \kappa(t) = \frac{K(0)e^{g_Kt}}{E(0)e^{g_Kt}L(0)e^{g_Kt}} 
+= \frac{K(0)}{E(0)L(0)}e^{(g_K-g_E-g_L)t} = \kappa^* \]
+Therefore $g_{Y/L} = g_E = g_K - g_L$
+
+\subsubsection*{General Solution}
+The general solution can be written in 'gap' form
+\[ \text{gap}(t) = \text{gap}(0)e^{-t/\tau} \]
+where
+\[ \text{gap}(t) = \kappa(t)^{1-\alpha} - \frac{s}{g_E + g_L + \delta} \]
+Overtime $\text{gap}(t)$ converges to 0, with the \textbf{half life} given by
+\[ \boxed{t_{1/2} = \frac{\ln 2}{(1 - \alpha)(g_E + g_L + \delta)}} \]
+
+\subsection{Shock Analysis}
+test
+
+\end{document}
