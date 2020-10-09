@@ -373,4 +373,28 @@ the edge $(v,u)$ is in $G^T$.
 \section{Shortest Path in Weighted Graphs}
 \underline{\textbf{Definition:}}
 \[ G(V, E, W) \]
+
+\section{Dynamic Prgramming} 
+Dynamic Programming (DP) is a powerful, general algorithmic design technique. 
+It can be think of as "careful brute force", or "subproblems + reuse". Similar 
+to divide and conquer, you take a problem, split it into subproblems, solve the 
+subproblems and reuse the solution to the subproblems.
+\subsection{Fibonacci Number}
+\[ F_1 = 1 \text{ , } F_2 = 1 \]
+\[ F_n = F_{n-1} + F_{n-2} \]
+\underline{\textbf{Goal:}} Compute $F_n$ \sb
+Here, the naive approach would be just recursively calling $F_n = F_{n-1} + F_{n-2}$ 
+until we reach $n=2$. However this give us the recurrence
+\[ T(n) = T(n-1) + T(n-2) + \Theta(1) \]
+% \begin{algorithm}
+%     \caption{Naive Fibonacci Algorithm} \begin{algorithmic}
+%         \Procedure{FibNaive}{$n$}
+%         \If{$n \le 2$} f = 1
+%         \Else \State f = \Call{FibNaive}{$n-1$} + \Call{FibNaive}{$n-2$}
+%         \EndIf
+        
+%         \EndProcedure
+%     \end{algorithmic}
+% \end{algorithm}
+
 \end{document}

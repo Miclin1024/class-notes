@@ -32,7 +32,7 @@
 We focus on the major items of macroeconomic interest: \textbf{Economic Activity, Inflation, Unemployment, Interest Rates}
 
 \subsection{National Income Accounting}
-\subsubsection{The Three Approaches to National Income Accounting}
+\subsubsection*{The Three Approaches to National Income Accounting}
 \underline{\textbf{Product Approach}}: the dollar amount of output \textbf{produced}. \sb
 The current \textbf{market value} of all \textbf{final goods and services newly produced} in the domestic economy, 
 during a specified period of time.
@@ -67,7 +67,7 @@ The \textbf{total spending} on \textbf{all final goods and services} produced in
 \pagebreak
 \textbf{\underline{Income Approach}}: the dollar \textbf{incomes earned} by production. \sb
 The \textbf{total income} earned by individuals and businesses in the economy. \sb
-\subsubsection{The Five Income Measures}
+\subsubsection*{The Five Income Measures}
 \begin{itemize}
     \item \textbf{National Income} = Compensation of Employees + Other Income + Corporate Profits
     \item \textbf{Gross National Product (GNP)} = National Income + Depreciation
@@ -78,10 +78,10 @@ The \textbf{total income} earned by individuals and businesses in the economy. \
 \end{itemize}
 
 \subsection{Inflation}
-\subsubsection{Price Index}
+\subsubsection*{Price Index}
 Measures the average level of prices for some specified set of goods and services 
 \textbf{relative to the prices in a specified base year.}
-\subsubsection{Three Major Price Indices} \begin{itemize}
+\subsubsection*{Three Major Price Indices} \begin{itemize}
     \item \textbf{The Gross Domestic Product (GDP) Deflator:}
     \[ P = 100 * \frac{\text{nominal GDP}}{\text{real GDP}} \]
     \item \textbf{The Personal Consumption Expenditure (PCE) Deflator:}
@@ -89,13 +89,13 @@ Measures the average level of prices for some specified set of goods and service
     \item \textbf{The Consumer Price Index (CPI):} \sb
     Measures the average prices of a specified basket of goods and services bought by consumers.
 \end{itemize}
-\subsubsection{Measuring Inflation}
+\subsubsection*{Measuring Inflation}
 Given the price index at time $t$, denoted as $P_t$, the inflation rate $\pi_t$ is expressed as the following
 \[ \pi_t \approx \frac{P_t - P_{t-1}}{P_{t-1}} \]
 Where with a little bit algebra, we derive the \textbf{Fisher Equation}
 \[ i \approx r + \pi \]
 $i$ stands for the nominal interest rate, and $r$ is the real interest rate.
-\subsubsection{Unemployment}
+\subsubsection*{Unemployment}
 
 \section{Aggregate Production and Productivity}
 When labor and capital are separately increased with the other held constant, 
@@ -206,8 +206,8 @@ We make the following assumptions: \begin{itemize}
 Plug in our expression for $\kappa(t)$, $L(t)$, and $E(t)$, we have the capital accumulation equation for $\kappa$
 \[ \frac{d\kappa}{dt} = s\kappa^\alpha - (g_E + g_L + \delta)\kappa \]
 The solution $\kappa(t)$ is important because it is directly related to \textbf{per-capita income} by
-\[ \frac{Y(t)}{L(t)} = \kappa^\alpha(t)E(t) \]
-
+\[ \frac{Y(t)}{L(t)} = \kappa(t)^\alpha E(t) \]
+% 
 Generally we have two solutions of interest
 \begin{itemize}
     \item The steady-state solution $\kappa^*$
@@ -230,7 +230,7 @@ and
     \boxed{\kappa^* = (\frac{s}{g_E + g_L + \delta})^\frac{1}{1 - \alpha}}
 \end{equation*}
 In the steady state, per-capita income is given by
-\[ \frac{Y(t)}{L(t)}  = (\frac{s}{g_E + g_L + \delta})^\frac{1}{1 - \alpha}E(t) \]
+\[ \frac{Y(t)}{L(t)}  = \kappa^*(t)^\alpha E(t) = (\frac{s}{g_E + g_L + \delta})^\frac{1}{1 - \alpha}E(t) \]
 and from which follows that
 \[ g_{Y/L} = g_E \]
 In the steady state $\kappa(t) = \kappa^*$ and is not changing, so
@@ -247,6 +247,14 @@ Overtime $\text{gap}(t)$ converges to 0, with the \textbf{half life} given by
 \[ \boxed{t_{1/2} = \frac{\ln 2}{(1 - \alpha)(g_E + g_L + \delta)}} \]
 
 \subsection{Shock Analysis}
-test
+Three important components\begin{itemize}
+    \item $\kappa^*(t)^\alpha E(t)$: \textbf{The balanced growth} 
+    \[\kappa^* = (\frac{s}{g_E + g_L + \delta})^\frac{1}{1 - \alpha}\]
+    \item $Y(t)/L(t)$: \textbf{Per capita income}
+    \[ \frac{Y(t)}{L(t)} = \kappa(t)^\alpha E(t) = (\frac{K(t)}{E(t)L(t)})^\alpha E(t) \]
+    \item $t_{1/2}$: \textbf{Half life} -- How fast per capita income converges to the 
+    balanced growth after a shock
+    \[ t_{1/2} = \frac{\ln 2}{(1 - \alpha)(g_E + g_L + \delta)} \]
+\end{itemize}
 
 \end{document}
