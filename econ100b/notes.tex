@@ -19,7 +19,7 @@
 \usepackage{subfig}
 \graphicspath{ {./images/} }
 
-\renewcommand{\sb}{\vspace*{4px} \\}
+\renewcommand{\sb}{\vspace*{5px} \\}
 
 \title{Economic Analysis Macro - Class Notes}
 \author{Michael Lin}
@@ -247,7 +247,7 @@ Overtime $\text{gap}(t)$ converges to 0, with the \textbf{half life} given by
 \[ \boxed{t_{1/2} = \frac{\ln 2}{(1 - \alpha)(g_E + g_L + \delta)}} \]
 
 \subsection{Shock Analysis}
-Three important components\begin{itemize}
+Four important components\begin{itemize}
     \item $\kappa^*(t)^\alpha E(t)$: \textbf{The balanced growth} 
     \[\kappa^* = (\frac{s}{g_E + g_L + \delta})^\frac{1}{1 - \alpha}\]
     \item $Y(t)/L(t)$: \textbf{Per capita income}
@@ -255,6 +255,85 @@ Three important components\begin{itemize}
     \item $t_{1/2}$: \textbf{Half life} -- How fast per capita income converges to the 
     balanced growth after a shock
     \[ t_{1/2} = \frac{\ln 2}{(1 - \alpha)(g_E + g_L + \delta)} \]
+    \item $g_{Y/L}$: \textbf{Long term growth rate}
+    \[ g_{Y/L} = g_E \]
 \end{itemize}
+
+\subsection{Endogenous Growth Theory - the Romer Model}
+If we are looking for the factors that help the economy grows faster, we soon 
+realize that factors such as the saving rate, labor-force growth rate can rise 
+and fall forever, but efficiency can always improve. \sb
+In endogenous growth theory, we look at \textbf{technology as a 
+production input.} It differs from capital and labor in two important 
+characteristics: \begin{itemize}
+    \item \textbf{Non-rivalry: } More than one person can use the factor 
+    at any given time.
+    \item \textbf{Non-excludability: } One person cannot prevento thers 
+    from using the factor.
+\end{itemize}
+Endogenous growth theory is an attempt to explain how 
+and why technology can increase
+endogenously and, thereby sustained increases in income-per-worker. 
+It is often referred to as the \textbf{Romer Model}.
+\pagebreak
+
+\subsubsection*{The Romer Model}
+In the Romer Model, \textbf{labor} is allocated to the production of \begin{itemize}
+    \item \textbf{Goods and services} $L_P$
+    \item \textbf{New technology} $L_E$
+\end{itemize}
+The total labor supply $L  = L_P + L_E$ is assumed to be fixed. Let $\gamma$ 
+denotes the ratio of total labor participating in R\&D.
+\[ L_E = \gamma L \]
+The production function for technology
+\[ \frac{dE}{dt} = \chi E L_E \]
+where $\chi$ indicates how productive labor is in producing ideas. \sb
+%
+If we take the technology production function and divide both side by $E$
+\[ \frac{1}{E}\frac{dE}{dt} \equiv g_E = \chi L_E \]
+Substituting $L_E$, we get the \textbf{Romer Model}
+\[ \boxed{g_E = \chi \gamma L} \]
+
+\section{Bussiness Cycles}
+
+\section{IS Curve}
+From the production function we can derive the economy's 
+\textbf{full-employment output level} 
+(how much the economy could produce). This is the basis for the 
+economy's \textbf{aggregate supply.} \sb
+%
+Now the focus shifts to how much is the demand in the economy, a.k.a the 
+\textbf{aggregate demand}. \sb
+%
+Aggregate demand and aggregate supply are crucial for explaining \textbf{short-run 
+fluctuations} in economic activity.
+\subsection{Planned Expenditures}
+There are two types of expenditure \begin{itemize}
+    \item \textbf{Acutal Expenditures} $Y$: Total amount of spending on 
+    domestically produced goods and services that households, businesses, the 
+    government, and foreigners acutally make. \textbf{This is equivalent to the \underline{total 
+    output} actually produced in the economy.}
+    \item \textbf{Planned Expenditures} $T^{pl}$: Total amount of spending on 
+    domestically produced goods and serves that households, businesses, the 
+    government, and foreigners want to make. \textbf{This is quivalent to the 
+    \underline{aggregate demand}.}
+\end{itemize}
+The economy is in \textbf{goods market equilibrium} when actual expenditures equal planned 
+expenditures
+\[ Y = Y^{pl} \]
+Similarily to the national income identity, $Y^{pl}$ can be expressed as
+\[ Y^{pl} = C + I^{pl} + G + NX \]
+
+\subsubsection*{The Consumption Function}
+Consumption expenditures are represented by the \textbf{consumption function}
+\[ C = \overline{C} + \text{mpc} \cdot Y^d - \zeta_c  r_L \]
+where
+\begin{align*}
+    \overline{C} &\equiv \text{Autonomous Consumption Expenditure} \\
+    Y^d &\equiv \text{Disposable Income} = Y - T \\
+    \text{mpc} &\equiv \text{Marginal Propensity to Consume} \\
+    \zeta_c &\equiv \text{Sensitivity of $C$ to $r_L$} \\
+    r_L &\equiv \text{Real Lending Interest Rate}
+\end{align*}
 
 \end{document}

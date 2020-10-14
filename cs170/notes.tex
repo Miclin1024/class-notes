@@ -386,6 +386,11 @@ subproblems and reuse the solution to the subproblems.
 Here, the naive approach would be just recursively calling $F_n = F_{n-1} + F_{n-2}$ 
 until we reach $n=2$. However this give us the recurrence
 \[ T(n) = T(n-1) + T(n-2) + \Theta(1) \]
+The correct answer for this recurrence is approximatly $\varphi^n$ where $\varphi$ 
+is the golden ratio $1.618\dots$. However, we can also simplify it like so
+\[ T(n) \le 2(n-2) = \Theta(2^{n/2}) \]
+\subsubsection*{Memoized DP Algorithm}
+memo = {}
 % \begin{algorithm}
 %     \caption{Naive Fibonacci Algorithm} \begin{algorithmic}
 %         \Procedure{FibNaive}{$n$}
