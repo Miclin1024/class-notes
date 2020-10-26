@@ -17,12 +17,12 @@
 \usepackage{float}
 \usepackage{enumerate}
 \usepackage{subfig}
+\usepackage{sectsty}
 \graphicspath{ {./images/} }
-
-\renewcommand{\sb}{\vspace*{5px} \\}
+%\subsubsectionfont{\underline}
 
 \title{Economic Analysis Macro - Class Notes}
-\author{Michael Lin}
+\author{Michael Lin \\ Professor: R. J. Hawkins}
 
 \begin{document}
 \maketitle
@@ -33,7 +33,7 @@ We focus on the major items of macroeconomic interest: \textbf{Economic Activity
 
 \subsection{National Income Accounting}
 \subsubsection*{The Three Approaches to National Income Accounting}
-\underline{\textbf{Product Approach}}: the dollar amount of output \textbf{produced}. \sb
+\underline{\textbf{Product Approach}}: the dollar amount of output \textbf{produced}. \smallskip \\
 The current \textbf{market value} of all \textbf{final goods and services newly produced} in the domestic economy, 
 during a specified period of time.
 \begin{enumerate}
@@ -43,10 +43,10 @@ during a specified period of time.
         \item Most non-market goods and services are not included. \underline{Example: Household services.}
         \item Some market goods and services are not included. \underline{Example: Used goods.}
     \end{itemize}
-    \item \textbf{Final Goods and Services} \sb
+    \item \textbf{Final Goods and Services} \smallskip \\
     Goods and services that are \textbf{not completely used up} in the production process.
 \end{enumerate}
-\underline{\textbf{Expenditure Approach}}: the dollar amount \textbf{spent} by purchasers. \sb
+\underline{\textbf{Expenditure Approach}}: the dollar amount \textbf{spent} by purchasers. \smallskip \\
 The \textbf{total spending} on \textbf{all final goods and services} produced in the domestic economy during a specified period of time.
 \begin{equation}
     \tag{\textbf{The National Income Identity}}
@@ -59,14 +59,14 @@ The \textbf{total spending} on \textbf{all final goods and services} produced in
         Spending for new capital goods\footnote{\textbf{Capital goods} are used to produce other goods and services.
         } (fixed investment) plus inventory investment.
         \item \textbf{Gov. Purchases of Goods and Services} \\
-        \textbf{Government Purchases} of goods and services. \sb
+        \textbf{Government Purchases} of goods and services. \smallskip \\
         \textbf{Government Transfer Payments} are \underline{\textbf{not}} included in $G$. (Not payments for goods and services) 
         \underline{Example: Medicare, Medicaid, Veterans’ benefits and etc.}
         \item \textbf{Net Exports}: Exports - Imports
     \end{enumerate}
 \pagebreak
-\textbf{\underline{Income Approach}}: the dollar \textbf{incomes earned} by production. \sb
-The \textbf{total income} earned by individuals and businesses in the economy. \sb
+\textbf{\underline{Income Approach}}: the dollar \textbf{incomes earned} by production. \smallskip \\
+The \textbf{total income} earned by individuals and businesses in the economy. \smallskip \\
 \subsubsection*{The Five Income Measures}
 \begin{itemize}
     \item \textbf{National Income} = Compensation of Employees + Other Income + Corporate Profits
@@ -86,7 +86,7 @@ Measures the average level of prices for some specified set of goods and service
     \[ P = 100 * \frac{\text{nominal GDP}}{\text{real GDP}} \]
     \item \textbf{The Personal Consumption Expenditure (PCE) Deflator:}
     \[ P = 100 * \frac{\text{nominal PCE}}{\text{real PCE}} \]
-    \item \textbf{The Consumer Price Index (CPI):} \sb
+    \item \textbf{The Consumer Price Index (CPI):} \smallskip \\
     Measures the average prices of a specified basket of goods and services bought by consumers.
 \end{itemize}
 \subsubsection*{Measuring Inflation}
@@ -103,7 +103,7 @@ the product increases by \textbf{diminishing increments}.
 \subsection{The Cobb-Douglas Production Function}
 Their assumptions for $Y(K, L)$: \begin{itemize}
     \item Output $Y$ is a function of capital $K$ and labor $L$
-    \item Constant returns to scale: \sb
+    \item Constant returns to scale: \smallskip \\
     If $K - m * K$ and $L - m * L$ then $Y - m * Y$
 \end{itemize}
 Their proposed solution:\begin{equation}
@@ -112,7 +112,7 @@ Their proposed solution:\begin{equation}
 \end{equation}
 Shows how much output can be produced from givenamounts of 
 capital and labor with a given level of total-factor productivity $A$ 
-(also referred to as "technology"). \sb
+(also referred to as "technology"). \smallskip \\
 Taking logs of both sides and subtract $\ln(L)$
 \[\ln(\frac{Y}{L}) = \ln{A} + \alpha \ln(\frac{K}{L})\]
 Notice that we now have a linear equation that we can analyze
@@ -151,7 +151,7 @@ When $AL^{1 - \alpha}$ goes down, output goes down across all input $K$
 \end{figure} \ \\
 Moveover, we can see that the slope of the post-shock production curve is smaller 
 than the pre-shock curve, which indicates the decrease of \textit{MPK}. As shown in 
-Figure 2(b), this also indicates the decrease of \textbf{real rental cost of capital}. \sb
+Figure 2(b), this also indicates the decrease of \textbf{real rental cost of capital}. \smallskip \\
 Similarily, when $AK^{\alpha}$ goes down, we will have a lower output across all input of capital.
 
 \subsection{Full-Employment Output}
@@ -176,21 +176,21 @@ Taking the log of both sides, then take the derivative
 \end{equation}
 Approximate the result with $\Delta t = 1$, we have
 \[ \frac{\Delta Y}{Y} = \frac{\Delta A}{A} + \alpha \frac{\Delta K}{K} + (1 - \alpha)\frac{\Delta L}{L} \]
-Sometimes it's also written as $g_Y = g_A + \alpha g_K + (1 - \alpha)g_L$ \sb
+Sometimes it's also written as $g_Y = g_A + \alpha g_K + (1 - \alpha)g_L$ \smallskip \\
 For example, in the United States where $\alpha \approx 0.3$, we have
 \[g_Y = g_A + 0.3 g_K + 0.7 g_L\]
-This tells us how the growth of one or more of the variables in the production function attribute to the overall increase in output.\sb
+This tells us how the growth of one or more of the variables in the production function attribute to the overall increase in output.\smallskip \\
 Research has shown that \textbf{productivity growth} is a more important source of variation in growth rates across countries than is growth 
 in capital or labor(a.k.a. factor accumulation).
 
 \subsection{The Solow-Swan Model}
-The Solow-Swan Model was developed in 1950s to determine \textbf{capital accumulation}, which affects \textbf{economic growth}. \sb
+The Solow-Swan Model was developed in 1950s to determine \textbf{capital accumulation}, which affects \textbf{economic growth}. \smallskip \\
 To derive this, we assume that a \textbf{constant fraction $s$ of output} $Y$ is saved, and the capital \textbf{depreciates at a constant rate} $\delta$.
 \begin{equation}
     \tag{Capital Accumulation Equation}
     \frac{dK}{dt} = sAK^{\alpha}L^{1-\alpha} - \delta K
 \end{equation}
-The goal is to solve this differential equation so we get $K$ as a function of $t$ \sb
+The goal is to solve this differential equation so we get $K$ as a function of $t$ \smallskip \\
 We make the following assumptions: \begin{itemize}
     \item Replace total factor of productivity $A$ with \textbf{labor efficiency} $E$, and assume that $E(t)$ has a \textbf{log-linear growth rate}
     \begin{align*}
@@ -215,6 +215,7 @@ Generally we have two solutions of interest
     \item The general solution $\kappa(t)$
 \end{itemize}
 
+\pagebreak
 
 \subsection{The Solutions}
 
@@ -262,7 +263,7 @@ Four important components\begin{itemize}
 \subsection{Endogenous Growth Theory - the Romer Model}
 If we are looking for the factors that help the economy grows faster, we soon 
 realize that factors such as the saving rate, labor-force growth rate can rise 
-and fall forever, but efficiency can always improve. \sb
+and fall forever, but efficiency can always improve. \smallskip \\
 In endogenous growth theory, we look at \textbf{technology as a 
 production input.} It differs from capital and labor in two important 
 characteristics: \begin{itemize}
@@ -275,7 +276,6 @@ Endogenous growth theory is an attempt to explain how
 and why technology can increase
 endogenously and, thereby sustained increases in income-per-worker. 
 It is often referred to as the \textbf{Romer Model}.
-\pagebreak
 
 \subsubsection*{The Romer Model}
 In the Romer Model, \textbf{labor} is allocated to the production of \begin{itemize}
@@ -287,23 +287,40 @@ denotes the ratio of total labor participating in R\&D.
 \[ L_E = \gamma L \]
 The production function for technology
 \[ \frac{dE}{dt} = \chi E L_E \]
-where $\chi$ indicates how productive labor is in producing ideas. \sb
+where $\chi$ indicates how productive labor is in producing ideas. \smallskip \\
 %
 If we take the technology production function and divide both side by $E$
 \[ \frac{1}{E}\frac{dE}{dt} \equiv g_E = \chi L_E \]
 Substituting $L_E$, we get the \textbf{Romer Model}
 \[ \boxed{g_E = \chi \gamma L} \]
-
+%
 \section{Bussiness Cycles}
+Business cycles are \textbf{short-run fluctuations} in aggregate economic activity 
+around its long-run growth path. Many economic activities will expand and contract 
+together in a recurring \textbf{but not periodic} fashion. \smallskip \\
+%
+Macroeconomic variables exhibit co-movement with GDP. They have regular and
+predictable patterns over the course of business cycle. They can be 
+classified by the \textbf{direction, timing, and volatility.} \smallskip \\
+%
+The \underline{\textbf{direction}} of the co-movement can be: \textbf{procyclical, countercyclical, or
+acyclical.} 
+\smallskip \\
+The \underline{\textbf{timing}} of the co-movement can be: 
+\textbf{leading, coincident, lagging, or
+not designated.} \smallskip \\
+The \underline{\textbf{volatility}} of the co-movement can be: \textbf{higher, similar, lower, or
+not designated.}  
+
 
 \section{IS Curve}
 From the production function we can derive the economy's 
 \textbf{full-employment output level} 
 (how much the economy could produce). This is the basis for the 
-economy's \textbf{aggregate supply.} \sb
+economy's \textbf{aggregate supply.} \smallskip \\
 %
 Now the focus shifts to how much is the demand in the economy, a.k.a the 
-\textbf{aggregate demand}. \sb
+\textbf{aggregate demand}. \smallskip \\
 %
 Aggregate demand and aggregate supply are crucial for explaining \textbf{short-run 
 fluctuations} in economic activity.
@@ -313,16 +330,16 @@ There are two types of expenditure \begin{itemize}
     domestically produced goods and services that households, businesses, the 
     government, and foreigners acutally make. \textbf{This is equivalent to the \underline{total 
     output} actually produced in the economy.}
-    \item \textbf{Planned Expenditures} $T^{pl}$: Total amount of spending on 
+    \item \textbf{Planned Expenditures} $T^{\text{pl}}$: Total amount of spending on 
     domestically produced goods and serves that households, businesses, the 
     government, and foreigners want to make. \textbf{This is quivalent to the 
     \underline{aggregate demand}.}
 \end{itemize}
 The economy is in \textbf{goods market equilibrium} when actual expenditures equal planned 
 expenditures
-\[ Y = Y^{pl} \]
+\[ Y = Y^{\text{pl}} \]
 Similarily to the national income identity, $Y^{pl}$ can be expressed as
-\[ Y^{pl} = C + I^{pl} + G + NX \]
+\[ Y^{\text{pl}} = C + I^{\text{pl}} + G + NX \]
 
 \subsubsection*{The Consumption Function}
 Consumption expenditures are represented by the \textbf{consumption function}
@@ -335,5 +352,201 @@ where
     \zeta_c &\equiv \text{Sensitivity of $C$ to $r_L$} \\
     r_L &\equiv \text{Real Lending Interest Rate}
 \end{align*}
+\textbf{Autonomous consumption } $\overline{C}$ includes those factors that
+affect consumption expenditures but are not explicitly included in the model.
+\smallskip \\
+This would include \begin{itemize}
+    \item Consumer confidence or sentiment (+)
+    \item Household wealth (+)
+    \item Expected future income (+)
+\end{itemize}
+
+\subsubsection*{The Investment Function}
+Planned investment expenditures are represented by the 
+\textbf{investment function}
+\[ I^{\text{pl}} = \overline{I} - \zeta_I \times r_L \]
+Similar to $\overline{C}$, $\overline{I}$ is affected by \begin{itemize}
+    \item Business confidence or sentiment (+)
+    \item Expected future profit and/or cash flow (+)
+    \item Changes in technology (+)
+\end{itemize}
+
+\subsubsection*{Net Exports Function}
+Net exports has 2 components: Exports and Imports. It is represented by the
+\textbf{net export function}
+\[ \text{NX} = \overline{\text{NX}} - \zeta_{\text{NX}} \times r_L \]
+Autonomous net exports can be affected by \begin{itemize}
+    \item Domestic preferences for foreign goods (-)
+    \item Foreign preferences for domestic goods (+)
+    \item Foreign trade barriers (-)
+\end{itemize}
+
+\subsubsection*{Government Spending}
+Government purchases are mainly autonomous $G = \overline{G}$, as well as
+taxes $T = \overline{T}$. They are both determined within the political system.
+
+\subsection{Goods Market Equilibrium}
+Summerizing our equations so far. At goods market equilibrium 
+$Y = Y^{\text{pl}}$, we have
+\[ Y = \frac{\overline{C} + \overline{I} + \overline{G} + \overline{\text{NX}}
+- \text{mpc} \times \overline{T}}{1 - \text{mpc}} - \frac{\zeta_C +
+ \zeta_I + \zeta_{\text{NX}}}{1 - \text{mpc}}r_L \]
+The \textbf{lending rate} $r_L$ is the interest rate at which companies 
+can borrow money
+for. It is set by the commercial banking system. It has the following 
+relationship with the \textbf{policy rate} $r$, which is set by the central bank.
+\[ r_L = r + s_{\text{term}} + s_{\text{credit}} \]
+\includegraphics[width=.5\textwidth, center]{Screen Shot 2020-10-15 at 12.56.31 AM.png}
+Substituting $r_L$, the IS curve becomes
+\[ Y = \frac{\overline{C} + \overline{I} + \overline{G} + \overline{\text{NX}}
+- \text{mpc} \times \overline{T} - \overline{S}}{1 - \text{mpc}} - \frac{\zeta_C +
+\zeta_I + \zeta_{\text{NX}}}{1 - \text{mpc}}r \]
+where $(\overline{S} = \zeta_C + \zeta_I + \zeta_{\text{NX}})
+(s_{\text{term}} + s_{\text{credit}})$
+\smallskip \\
+from which we obtain a simplified expression for the IS curve
+\[ \boxed{Y = \overline{Y} - \zeta_Y r} \]
+if follows that there is a rate $r^*$ that produces potential output $Y^P$
+\[ Y^P = \overline{Y} - \zeta_Y r^* \]
+
+\section{The Phillips Curve}
+The Phillips Curve is the \textbf{inverse relationship between inflation
+and unemployment.} \smallskip \\
+The intuition is that a lower unemployment rate means more people are working,
+which signals increased demand of labor. This can drive up wages.
+Because higher wages lead to a higher total cost of production, this 
+translates into higher price and higher inflation. Secondly, when people 
+have more disposable income they will be willing to buy things 
+at a higher price. \smallskip \\
+The Phillips Curve also implies an \textbf{inverse relationship 
+between nominal wages and unemployment.}
+
+\subsection{Natural Rate of Unemployment}
+In the long-run, when all wages and prices are completely flexible, unemployment
+would be at the natural rate of unemployment $u_N$. \smallskip \\
+There are two components of $u_N$: \textbf{frictional unemployment and structural
+unemployment}. \begin{itemize}
+    \item Frictional unemployment involves people transitioning between jobs; 
+    it has nothing to do with the economic cycle and is voluntary.
+    \item Structural unemployment is seen as the change in the nature of the 
+    economy that renders the skillsets associated with certain individuals no 
+    longer optimal in that economy. It is a direct result of shifts in the 
+    economy, including changes in technology or declines in an industry.
+    \item Structural unemployment is very concerning to economists, while 
+    frictional unemployment is considered inevitable and not factored into 
+    the unemployment rate.
+\end{itemize}
+%
+Incorporating these changes, we have the \textbf{expectations-augmented 
+Phillips Curve}
+\[ \pi = \pi^e - \omega(u - u_N) \]
+where $\pi^e$ is the expected inflation. This implies that in the long-run
+$u = u_N$, and therefore $\pi = \pi^e$. So there is 
+\textbf{no long-run trade-off between 
+unemployment and inflation. } \smallskip \\
+Thus there are two types of Phillips Curve \begin{itemize}
+    \item Short-run Phillips Curve (SRPC) \smallskip \\
+    It shows the inverse relationship between inflation and unemployment.
+    \item Long-run Phillips Curve (NAIRU) \smallskip \\
+    It is a vertical line at the natural rate of unemployment.
+\end{itemize}
+
+\subsection{The Short-run Phillips Curve}
+When we include price shocks $\rho$ we have the modern short-run Phillips
+Curve
+\[ \pi = \pi^e - \omega(u - u_N) + \rho \]
+This implies that wages and prices are \textbf{sticky}.
+\smallskip \\
+The more flexible wages and prices are, the more they will respond to the
+unemployment gap, and the more inflation will respond to the gap. i.e. 
+$\omega$ is larger.
+\smallskip \\
+When wages and prices were completely flexible, $\omega = \infty$,
+the SRPC becomes vertical and identical to the NAIRU.
+\subsubsection*{An Example
+\footnote{The Relationship Between Inflation and Unemployment. 
+\textit{lumenlearning.com}}
+}
+\includegraphics[width=.4\textwidth, center]
+{Screen Shot 2020-10-23 at 2.31.14 PM.png}
+Assume the economy starts at point A and has an initial rate of unemployment 
+and inflation rate. If the government decides to pursue expansionary economic 
+policies, inflation will increase as aggregate demand shifts to the right. 
+This is shown as a \textbf{movement along the short-run Phillips curve}, to point B, 
+which is an unstable equilibrium. 
+\smallskip \\
+As aggregate demand increases, more workers 
+will be hired by firms in order to produce more output to meet rising demand, 
+and unemployment will decrease. However, due to the higher inflation, workers’ 
+\textbf{expectations of future inflation changes}, which shifts 
+the short-run Phillips 
+curve to the right, from unstable equilibrium point B to the stable equilibrium 
+point C. At point C, the rate of unemployment has increased back to its natural 
+rate, but inflation remains higher than its initial level.
+\smallskip \\
+The reason the short-run Phillips curve shifts is due to the changes in 
+inflation expectations. Workers, who are assumed to be completely rational 
+and informed, will recognize their nominal wages have not kept pace with 
+inflation increases (the movement from A to B), so their real wages have 
+been decreased. As such, in the future, they will renegotiate their nominal 
+wages to reflect the higher expected inflation rate, in order to keep their 
+real wages the same. As nominal wages increase, production costs for the 
+supplier increase, which diminishes profits. As profits decline, suppliers 
+will decrease output and employ fewer workers (the movement from B to C). 
+Consequently, an attempt to decrease unemployment at the cost of higher 
+inflation in the short run led to higher inflation and no change in unemployment 
+in the long run.
+
+\subsection{Two Theories of Expectations}
+There are two theories of expectations (adaptive or rational) that predict 
+how people will react to inflation.
+\smallskip \\
+\textbf{Rational expectations theory} says that people use all information to
+accuratly anticipate inflation. If the current inflation is higher than nominal
+people will take that into consideration.
+\smallskip \\
+\textbf{Adaptive expectations theory} says that people use 
+\textbf{past information} 
+as the best predictor of future events. If inflation was higher than normal 
+in the past, people will expect it to be higher than anticipated in the future.
+Namely, this is saying that $\pi^e = \pi_{t-1}$
+\bigskip \\
+And this give us a new Phillips Curve
+\[ \boxed{\pi_t = \pi_{t-1} - \omega(u_t - u_N) + \rho_t} \]
+It can be written as the accelerationist Phillips Curve
+\[ \Delta\pi_t = - \omega(u_t - u_N) + \rho_t  \]
+
+\subsection{Aggregate Supply}
+The aggregate supply curve represent the positive relationship between
+the \textbf{quantity of output} that businesses are willing to 
+produce and the \textbf{inflation rate}.
+\smallskip \\
+The \textbf{short-run aggregate supply curve (SRAS)} is derived from the 
+short-run Phillips curve by replacing the unemployment gap $u - u_N$ with
+the output gap $y - y^P$. These two values can be associated empirically using
+\textbf{Okun's Law} \\
+\includegraphics[width=.5\textwidth, center]
+{Screen Shot 2020-10-23 at 3.01.18 PM.png}
+which states that
+\[ (u_t - u_N) \approx -0.6(y_t - y^P) \]
+This substitution gives us the SRAS
+\[ \boxed{\pi_t = \pi_{t-1} - \gamma(y_t - y^P) + \rho_t} \]
+where $\gamma = -C_{\text{Okun}} \omega$. It indicates how flexible price and 
+wage are. In the long-run, as price and wage become completely flexible
+$(\gamma \rightarrow \infty)$. This 
+gives us the \textbf{long-run aggregate supply curve (LRAS)}
+\[ y_t = y^P \]
+
+\section{Monetary Policy}
+The Federal Reserve’s dual mandate is \textbf{stable prices} and 
+\textbf{maximum employment}, referring to inflation and unemployment. Other
+centeral banks in the world have similar goals.
+These two objectives can be expressed as a central bank loss function
+\[ L = (y_t - y^P)^2 + \beta(\pi_t - \pi^T)^2 \]
+To minimize the loss function, we combine the Phillips curve and the IS curve.
+This gives us the \textbf{optimal rate rule}.
+\[ r_t = r^* + \frac{1}{\zeta_y + \frac{1}{\gamma \beta}}(\pi_t - \pi^T) \]
+Central banks use nominal short-term interest rates as their primary
+policy tool. In the United States, the FED 
 
 \end{document}
